@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JuancPulidos</title>
-    <link>https://juancpulidos.github.io/</link>
-    <description>Recent content on JuancPulidos</description>
+    <title>Pages on JuancPulidos</title>
+    <link>https://juancpulidos.github.io/page/</link>
+    <description>Recent content in Pages on JuancPulidos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>juancpulidos</copyright>
-    <lastBuildDate>Mon, 25 Mar 2019 12:33:05 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 23 Mar 2019 19:31:06 -0500</lastBuildDate>
     
-	<atom:link href="https://juancpulidos.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://juancpulidos.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Git Init</title>
-      <link>https://juancpulidos.github.io/courses/git-init/</link>
-      <pubDate>Mon, 25 Mar 2019 12:33:05 -0500</pubDate>
-      
-      <guid>https://juancpulidos.github.io/courses/git-init/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Primero Proyecto</title>
-      <link>https://juancpulidos.github.io/projects/primero-proyecto/</link>
-      <pubDate>Mon, 25 Mar 2019 12:32:24 -0500</pubDate>
-      
-      <guid>https://juancpulidos.github.io/projects/primero-proyecto/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Contact</title>
@@ -58,15 +40,6 @@
 git commit -a -m &amp;ldquo;El objetivo de mi trabajo es apoyarte en adquirir conocimientos en programación y que desarrolles tus propias aplicaciones.&amp;rdquo;
 git push origin master
 Bienvenid@!</description>
-    </item>
-    
-    <item>
-      <title>Articulo Primero</title>
-      <link>https://juancpulidos.github.io/2019/03/23/articulo-primero/</link>
-      <pubDate>Sat, 23 Mar 2019 18:57:53 -0500</pubDate>
-      
-      <guid>https://juancpulidos.github.io/2019/03/23/articulo-primero/</guid>
-      <description>aqui un titulo contenido de ejemplo</description>
     </item>
     
   </channel>

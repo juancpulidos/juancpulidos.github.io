@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on JuancPulidos</title>
+    <link>https://juancpulidos.github.io/projects/</link>
+    <description>Recent content in Projects on JuancPulidos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>juancpulidos</copyright>
+    <lastBuildDate>Mon, 25 Mar 2019 12:32:24 -0500</lastBuildDate>
+    
+	<atom:link href="https://juancpulidos.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Primero Proyecto</title>
+      <link>https://juancpulidos.github.io/projects/primero-proyecto/</link>
+      <pubDate>Mon, 25 Mar 2019 12:32:24 -0500</pubDate>
+      
+      <guid>https://juancpulidos.github.io/projects/primero-proyecto/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

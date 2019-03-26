@@ -3,12 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://juancpulidos.github.io/courses/git-init/</loc>
+    <lastmod>2019-03-25T12:33:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juancpulidos.github.io/projects/primero-proyecto/</loc>
+    <lastmod>2019-03-25T12:32:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juancpulidos.github.io/page/contact/</loc>
+    <lastmod>2019-03-23T19:31:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juancpulidos.github.io/page/projects/</loc>
+    <lastmod>2019-03-23T19:28:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juancpulidos.github.io/page/about/</loc>
+    <lastmod>2019-03-23T19:28:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juancpulidos.github.io/2019/03/23/articulo-primero/</loc>
+    <lastmod>2019-03-23T18:57:53-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://juancpulidos.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://juancpulidos.github.io/courses/</loc>
+    <lastmod>2019-03-25T12:33:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://juancpulidos.github.io/</loc>
+    <lastmod>2019-03-25T12:33:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://juancpulidos.github.io/page/</loc>
+    <lastmod>2019-03-23T19:31:06-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://juancpulidos.github.io/post/</loc>
+    <lastmod>2019-03-23T18:57:53-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://juancpulidos.github.io/projects/</loc>
+    <lastmod>2019-03-25T12:32:24-05:00</lastmod>
     <priority>0</priority>
   </url>
   
