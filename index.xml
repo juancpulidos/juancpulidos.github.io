@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JuancPulidos</title>
-    <link>/</link>
+    <link>https://juancpulidos.github.io/</link>
     <description>Recent content on JuancPulidos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>juancpulidos</copyright>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://juancpulidos.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
