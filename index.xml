@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JuancPulidos</title>
-    <link>https://juancpulidos.github.io/</link>
+    <link>https://juancpulidos.com/</link>
     <description>Recent content on JuancPulidos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>juancpulidos</copyright>
     <lastBuildDate>Mon, 25 Mar 2019 12:33:05 -0500</lastBuildDate>
     
-	<atom:link href="https://juancpulidos.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://juancpulidos.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Git Init</title>
-      <link>https://juancpulidos.github.io/courses/git-init/</link>
+      <link>https://juancpulidos.com/courses/git-init/</link>
       <pubDate>Mon, 25 Mar 2019 12:33:05 -0500</pubDate>
       
-      <guid>https://juancpulidos.github.io/courses/git-init/</guid>
+      <guid>https://juancpulidos.com/courses/git-init/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Primero Proyecto</title>
-      <link>https://juancpulidos.github.io/projects/primero-proyecto/</link>
+      <link>https://juancpulidos.com/projects/primero-proyecto/</link>
       <pubDate>Mon, 25 Mar 2019 12:32:24 -0500</pubDate>
       
-      <guid>https://juancpulidos.github.io/projects/primero-proyecto/</guid>
+      <guid>https://juancpulidos.com/projects/primero-proyecto/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://juancpulidos.github.io/page/contact/</link>
+      <link>https://juancpulidos.com/page/contact/</link>
       <pubDate>Sat, 23 Mar 2019 19:31:06 -0500</pubDate>
       
-      <guid>https://juancpulidos.github.io/page/contact/</guid>
+      <guid>https://juancpulidos.com/page/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://juancpulidos.github.io/page/projects/</link>
+      <link>https://juancpulidos.com/page/projects/</link>
       <pubDate>Sat, 23 Mar 2019 19:28:55 -0500</pubDate>
       
-      <guid>https://juancpulidos.github.io/page/projects/</guid>
+      <guid>https://juancpulidos.com/page/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Acerca de mi</title>
-      <link>https://juancpulidos.github.io/page/about/</link>
+      <link>https://juancpulidos.com/page/about/</link>
       <pubDate>Sat, 23 Mar 2019 19:28:09 -0500</pubDate>
       
-      <guid>https://juancpulidos.github.io/page/about/</guid>
+      <guid>https://juancpulidos.com/page/about/</guid>
       <description>$ git init_ Mi nombre es Juan Carlos Pulido Suarez, llevo más de 18 años trabajando en programación. Me desempeño principalmente en desarrollo web y diseño UI/UX (User Interface / User eXperience). Me gusta aprender constantemente y quiero compartir mis conocimientos.
 git commit -a -m &amp;ldquo;El objetivo de mi trabajo es apoyarte en adquirir conocimientos en programación y que desarrolles tus propias aplicaciones.&amp;rdquo;
 git push origin master
@@ -62,10 +62,10 @@ Bienvenid@!</description>
     
     <item>
       <title>Articulo Primero</title>
-      <link>https://juancpulidos.github.io/2019/03/23/articulo-primero/</link>
+      <link>https://juancpulidos.com/2019/03/23/articulo-primero/</link>
       <pubDate>Sat, 23 Mar 2019 18:57:53 -0500</pubDate>
       
-      <guid>https://juancpulidos.github.io/2019/03/23/articulo-primero/</guid>
+      <guid>https://juancpulidos.com/2019/03/23/articulo-primero/</guid>
       <description>aqui un titulo contenido de ejemplo</description>
     </item>
     

@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on JuancPulidos</title>
-    <link>https://juancpulidos.github.io/page/</link>
+    <link>https://juancpulidos.com/page/</link>
     <description>Recent content in Pages on JuancPulidos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>juancpulidos</copyright>
     <lastBuildDate>Sat, 23 Mar 2019 19:31:06 -0500</lastBuildDate>
     
-	<atom:link href="https://juancpulidos.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://juancpulidos.com/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Contact</title>
-      <link>https://juancpulidos.github.io/page/contact/</link>
+      <link>https://juancpulidos.com/page/contact/</link>
       <pubDate>Sat, 23 Mar 2019 19:31:06 -0500</pubDate>
       
-      <guid>https://juancpulidos.github.io/page/contact/</guid>
+      <guid>https://juancpulidos.com/page/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://juancpulidos.github.io/page/projects/</link>
+      <link>https://juancpulidos.com/page/projects/</link>
       <pubDate>Sat, 23 Mar 2019 19:28:55 -0500</pubDate>
       
-      <guid>https://juancpulidos.github.io/page/projects/</guid>
+      <guid>https://juancpulidos.com/page/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Acerca de mi</title>
-      <link>https://juancpulidos.github.io/page/about/</link>
+      <link>https://juancpulidos.com/page/about/</link>
       <pubDate>Sat, 23 Mar 2019 19:28:09 -0500</pubDate>
       
-      <guid>https://juancpulidos.github.io/page/about/</guid>
+      <guid>https://juancpulidos.com/page/about/</guid>
       <description>$ git init_ Mi nombre es Juan Carlos Pulido Suarez, llevo más de 18 años trabajando en programación. Me desempeño principalmente en desarrollo web y diseño UI/UX (User Interface / User eXperience). Me gusta aprender constantemente y quiero compartir mis conocimientos.
 git commit -a -m &amp;ldquo;El objetivo de mi trabajo es apoyarte en adquirir conocimientos en programación y que desarrolles tus propias aplicaciones.&amp;rdquo;
 git push origin master
