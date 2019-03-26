@@ -1,0 +1,22 @@
+
+.fixed-menu {
+  margin: 5px;
+}
+
+a.change-mode-color {
+    color: lightgray;
+
+    &:hover {
+      color: darkgray;
+    }
+
+    i {
+      transform: rotate(45deg);
+    }
+
+}
+
+em, 
+strong {
+  color: lightseagreen;
+}
