@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Instalando Nodejs con NVM y YARN &middot; Juan C. Pulido S.</title>
+        <meta name="description" content="Instalando Nodejs con NVM y YARN en MAC Como desarrollador fullstack es importante tener a disposición distintas versiones de nodejs y poder cambiar entre ellas sin recurrir a instalar todo un entorno cada vez. Igualmente no siempre queremos usar npm [npx], también tenemos yarn y queremos usar sus ventajas.
+Para lo primero, de usar distintas versiones de node y cambiar cuando se requiera, podemos usar nvm. Un método adecuado para instalar nvm es seguir las instrucciones de los mismos creadores de nvm https://github.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="generator" content="Hugo 0.54.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Instalando Nodejs con NVM y YARN">
+<meta property="og:description" content="Instalando Nodejs con NVM y YARN en MAC Como desarrollador fullstack es importante tener a disposición distintas versiones de nodejs y poder cambiar entre ellas sin recurrir a instalar todo un entorno cada vez. Igualmente no siempre queremos usar npm [npx], también tenemos yarn y queremos usar sus ventajas.
+Para lo primero, de usar distintas versiones de node y cambiar cuando se requiera, podemos usar nvm. Un método adecuado para instalar nvm es seguir las instrucciones de los mismos creadores de nvm https://github.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://juancpulidos.com/2019/09/06/instalando-nodejs-con-nvm-y-yarn/">
+        <link rel="stylesheet" href="https://juancpulidos.com/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <div class="fixed-menu">
+                    <a href="javascript:;" class="change-mode-color"><i class="fa fa-adjust"></i></a>
+            </div>
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="juancpulidos" href="https://juancpulidos.com/">juancpulidos</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://juancpulidos.com/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/juancpulidosme" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/alephart" target="_blank">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/1842574/juan-carlos-pulido-suarez" target="_blank">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://linkedin.com/in/juancpulidos/" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:hola@juancpulidos.com" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Acerca de mi" href="/page/about/">Acerca de mi</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Cursos" href="/courses/">Cursos</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Proyectos" href="/projects/">Proyectos</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contacto" href="/page/contact/">Contacto</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Instalando Nodejs con NVM y YARN</h1>
+    
+    <p class="post-date">
+        <span>Publicado <time datetime="2019-09-06" itemprop="datePublished">Fri, Sep 6, 2019</time></span>
+        <span>por</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://linkedin.com/in/juancpulidos/" itemprop="url" rel="author">Juan C. Pulido S.</a>
+            </span>
+        </span>
+    </p>
+    
+        <p class="post-reading post-line">
+            <span>Tiempo estimado de lectura: 5 min</span>
+        </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<h1 id="instalando-nodejs-con-nvm-y-yarn-en-mac">Instalando Nodejs con NVM y YARN en MAC</h1>
+
+<p>Como desarrollador fullstack es importante tener a disposición distintas versiones de <strong>nodejs</strong> y poder cambiar entre ellas sin recurrir a instalar todo un entorno cada vez. Igualmente no siempre queremos usar <strong>npm [npx]</strong>, también tenemos <strong>yarn</strong> y queremos usar sus ventajas.</p>
+
+<p>Para lo primero, de usar distintas versiones de node y cambiar cuando se requiera, podemos usar <strong>nvm</strong>. Un método adecuado para instalar nvm es seguir las instrucciones de los mismos creadores de nvm <a href="https://github.com/creationix/nvm">https://github.com/creationix/nvm</a>.</p>
+
+<p>Entonces, en nuestra terminal (usando <a href="https://hyper.is/">hyper</a> como yo :) sigamos las instrucciones:</p>
+
+<pre><code class="language-console">$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+</code></pre>
+
+<p>Esto nos instala nvm y nos indica como configurar las variables de entorno en el perfil bash: <em>(~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc)</em>. Algunos o todos estos archivos los encontraremos en el Home de nuestro User en Mac.</p>
+
+<pre><code class="language-console">export NVM_DIR=&quot;$HOME/.nvm&quot;
+[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm
+[ -s &quot;$NVM_DIR/bash_completion&quot; ] &amp;&amp; \. &quot;$NVM_DIR/bash_completion&quot;  # This loads nvm bash_completion
+</code></pre>
+
+<p>Después de ajustar las variables de entorno en nuestro perfil bash, restauramos la terminal y pasamos a instalar node. Primero revisemos que si tenemos bien configurado nvm:</p>
+
+<pre><code class="language-console">$ nvm --version
+</code></pre>
+
+<p>En mi caso tengo instalada la versión 0.34.0.</p>
+
+<p>Ahora si instalamos la última versión de node:</p>
+
+<pre><code class="language-console">$ nvm install node
+</code></pre>
+
+<p>Recuerda que nvm te permite instalar varias versiones de node y poder usarlas cuando requieras. Vamos a instalar la version 10.15.1:</p>
+
+<pre><code class="language-console">$ nvm install 10.15.1
+</code></pre>
+
+<p>Veamos que tenemos instalado ahora:</p>
+
+<pre><code class="language-console">$ nvm ls
+
+       v10.15.1
+-&gt;     v11.10.0
+default -&gt; node (-&gt; v11.10.0)
+node -&gt; stable (-&gt; v11.10.0) (default)
+stable -&gt; 11.10 (-&gt; v11.10.0) (default)
+iojs -&gt; N/A (default)
+unstable -&gt; N/A (default)
+lts/* -&gt; lts/dubnium (-&gt; v10.15.1)
+lts/argon -&gt; v4.9.1 (-&gt; N/A)
+lts/boron -&gt; v6.16.0 (-&gt; N/A)
+lts/carbon -&gt; v8.15.0 (-&gt; N/A)
+lts/dubnium -&gt; v10.15.1
+</code></pre>
+
+<p>Tenemos dos versiones de node y por defecto la v.11.10.0.</p>
+
+<pre><code class="language-console">$ node --version
+
+v11.10.0
+</code></pre>
+
+<pre><code class="language-console">$ npm --version
+
+6.7.0
+</code></pre>
+
+<p>Si queremos usar una versión en particular pues simplemente con nvm:</p>
+
+<pre><code class="language-console">$ nvm use v10.15.1
+</code></pre>
+
+<p>ó la activamos por defecto:</p>
+
+<pre><code class="language-console">$ nvm alias default v10.15.1
+</code></pre>
+
+<p>Ahora vamos a istalar yarn para tener nuestro arsenal listo y sin conflictos. Vamos a usar Homebrew para instalar yarn:</p>
+
+<pre><code class="language-console">$ brew install yarn --ignore-dependencies
+</code></pre>
+
+<p>En las instrucciones de instalación de yarn se sugiere excluir la instalación de node si se usa nvm o similares, para que la versión de node usada con nvm ignore las dependencias y asi evitamos conflictos.</p>
+
+<p>Igualmente si yarn no se encuentra en nuestro PATH, modificamos nuestro perfil para permitir que corra desde cualquier directorio y de forma global:</p>
+
+<pre><code class="language-console">export PATH=&quot;/usr/local/opt/yarn:$PATH&quot;
+export PATH=&quot;$PATH:`yarn global bin`&quot;
+</code></pre>
+
+<p>Reiniciamos la terminal y comprobamos la instalación de yarn:</p>
+
+<pre><code class="language-console">$ yarn --version
+
+1.13.0
+</code></pre>
+
+<h2 id="tenia-mi-entorno-node-y-ahora-tengo-conflictos">TENIA MI ENTORNO NODE Y AHORA TENGO CONFLICTOS</h2>
+
+<p>Me anime a escribir este pequeño instructivo por que ya contaba con este entorno configurado y se me presento conflictos con nvm, npm y yarn en algunas terminales, ejemplo en VS Code:</p>
+
+<pre><code class="language-console">nvm is not compatible with the npm config &quot;prefix&quot; option: currently set to &quot;/usr/local&quot;
+Run `npm config delete prefix` or `nvm use --delete-prefix v10.12.1 --silent` to unset it.
+</code></pre>
+
+<p>Básicamente tenia instalado nvm con Homebrew y este último reescribe el perfil del bash configurando esta línea:</p>
+
+<pre><code class="language-console">source $(brew --prefix nvm)/nvm.sh
+</code></pre>
+
+<p>No basta con eliminar la línea, eso afecta a nvm con Homebrew. Lo que se debe hacer para ajustar todo de forma correcta es desinstalar el entorno node y volviendo a configurar según lo explicado arriba.</p>
+
+<h2 id="desinstalando-el-entorno-node">DESINSTALANDO EL ENTORNO NODE</h2>
+
+<p>para ir limpiando todo adecuadamente vamos a desinstalar las versiones de node que tenemos con nvm anterior:</p>
+
+<pre><code class="language-console">$ nvm ls
+       4.9.1
+       5.12.0
+       6.16.0
+       7.9.0
+       8.8.1
+       8.15.0
+       9.11.2
+-&gt;     v10.12.1
+.
+.
+.
+</code></pre>
+
+<pre><code class="language-console">$ nvm uninstall 4.9.1
+$ nvm uninstall 5.12.0
+$ nvm uninstall 6.16.0
+</code></pre>
+
+<p>y asi para todas las versiones con que contemos.</p>
+
+<p>También podriamos usar:</p>
+
+<pre><code class="language-console">$ rm -rf &quot;$NVM_DIR&quot;
+</code></pre>
+
+<p>Y con esto eliminamos todo, pero&hellip; recuerden que tenia instalado nvm con homebrew.</p>
+
+<p>Eliminemos nvm:</p>
+
+<pre><code class="language-console">$ brew uninstall nvm
+</code></pre>
+
+<p>Quitaremos del perfil bash:</p>
+
+<pre><code class="language-console">export NVM_DIR=&quot;$HOME/.nvm&quot;
+[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm
+[ -s &quot;$NVM_DIR/bash_completion&quot; ] &amp;&amp; \. &quot;$NVM_DIR/bash_completion&quot;  # This loads nvm bash_completion
+</code></pre>
+
+<p>Ahora desinstalar yarn:</p>
+
+<pre><code class="language-console">$ brew uninstall yarn
+</code></pre>
+
+<p>Reiniciamos la terminal y listos!.</p>
+
+<blockquote>
+<p><em>Es posible que tengamos basura de estas instalaciones u otros intentos de instalar node en nuestro sistema. Vamos a cerciorarnos manualmente de limpiar lo mejor posible.</em></p>
+</blockquote>
+
+<p>Note que algunos de los directorios nombrados a continuación dependerán del método de instalación que se haya tenido:</p>
+
+<ul>
+<li>Borrar node y/o node_modules de /usr/local/lib</li>
+<li>Borrar node y/o node_modules de /usr/local/include</li>
+<li>Borrar node, node-debug, y node-gyp de /usr/local/bin</li>
+<li>Borrar .npm del directorio home</li>
+<li>Borrar .node-gyp del directorio home</li>
+<li>Borrar .node_repl_history del directorio home</li>
+<li>Borrar node* de /usr/local/share/man/man1/</li>
+<li>Borrar npm* de /usr/local/share/man/man1/</li>
+<li>Borrar node.d de /usr/local/lib/dtrace/</li>
+<li>Borrar node de /opt/local/bin/</li>
+<li>Borrar node de /opt/local/include/</li>
+<li>Borrar node_modules de /opt/local/lib/</li>
+<li>Borrar node de /usr/local/share/doc/</li>
+<li>Borrar node.stp de /usr/local/share/systemtap/tapset/</li>
+</ul>
+
+<p>Recuerde que para borrar puede usar el comando <strong>rm</strong>:</p>
+
+<pre><code class="language-console"># borrar archivo
+$ rm nombre.archivo
+
+# borrar directorio
+$ rm -rf nombreDirectorio
+
+# cuando se requiera permisos de root
+$ sudo rm archivo
+</code></pre>
+
+<p>Este proceso me permitio limpiar debidamente mi entorno node y posteriormente hacer una instalación limpia y bien configurada con el proceso mencionado arriba.</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Instalando%20Nodejs%20con%20NVM%20y%20YARN&url=https%3a%2f%2fjuancpulidos.com%2f2019%2f09%2f06%2finstalando-nodejs-con-nvm-y-yarn%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjuancpulidos.com%2f2019%2f09%2f06%2finstalando-nodejs-con-nvm-y-yarn%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fjuancpulidos.com%2f2019%2f09%2f06%2finstalando-nodejs-con-nvm-y-yarn%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="juancpulidos" href="https://juancpulidos.com/">juancpulidos</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://alephart.co/">Alephart Co.</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://juancpulidos.com/js/jquery-1.11.3.min.js"></script>
+        <script src="https://juancpulidos.com/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="https://juancpulidos.com/js/scripts.js"></script>
+    </body>
+</html>
+
