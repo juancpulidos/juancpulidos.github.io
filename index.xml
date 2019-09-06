@@ -14,10 +14,10 @@
     
     <item>
       <title>Instalando Nodejs con NVM y YARN</title>
-      <link>https://juancpulidos.com/2019/09/06/instalando-nodejs-con-nvm-y-yarn/</link>
+      <link>https://juancpulidos.com/instalando-nodejs-con-nvm-y-yarn/</link>
       <pubDate>Fri, 06 Sep 2019 15:03:01 -0500</pubDate>
       
-      <guid>https://juancpulidos.com/2019/09/06/instalando-nodejs-con-nvm-y-yarn/</guid>
+      <guid>https://juancpulidos.com/instalando-nodejs-con-nvm-y-yarn/</guid>
       <description>Instalando Nodejs con NVM y YARN en MAC Como desarrollador fullstack es importante tener a disposición distintas versiones de nodejs y poder cambiar entre ellas sin recurrir a instalar todo un entorno cada vez. Igualmente no siempre queremos usar npm [npx], también tenemos yarn y queremos usar sus ventajas.
 Para lo primero, de usar distintas versiones de node y cambiar cuando se requiera, podemos usar nvm. Un método adecuado para instalar nvm es seguir las instrucciones de los mismos creadores de nvm https://github.</description>
     </item>
@@ -72,10 +72,10 @@ Bienvenid@!</description>
     
     <item>
       <title>Articulo Primero</title>
-      <link>https://juancpulidos.com/2019/03/23/articulo-primero/</link>
+      <link>https://juancpulidos.com/articulo-primero/</link>
       <pubDate>Sat, 23 Mar 2019 18:57:53 -0500</pubDate>
       
-      <guid>https://juancpulidos.com/2019/03/23/articulo-primero/</guid>
+      <guid>https://juancpulidos.com/articulo-primero/</guid>
       <description>Iniciamos este nuevo camino Bien, aquí iniciamos este camino de un blog desplegado con GO &amp;ldquo;HUGO&amp;rdquo;. Ire comentando sobre el uso del mismo y como podemos crear de una forma fácil un sitio web con este generador de contenidos estático y desplegando con Github Pages.
 Bienvenid@!</description>
     </item>
